@@ -12,42 +12,53 @@
 		<link rel="stylesheet" href="./lib/bootstrap-grid.css" />
 	</head>
 	<body>
-		<section id="app" class="container box--red">
-			<div id="output" class="box--purple">
-				<div class="row container">
-					<h3 id="result" class="col-12">result</h3>
-				</div>
-			</div>
-			<div id="input" class="box--green">
-				<!-- numbers -->
-				<button id="id9" class="btn">9</button>
-				<button id="id8" class="btn">8</button>
-				<button id="id7" class="btn">7</button>
-				<button id="id6" class="btn">6</button>
-				<button id="id5" class="btn">5</button>
-				<button id="id4" class="btn">4</button>
-				<button id="id3" class="btn">3</button>
-				<button id="id2" class="btn">2</button>
-				<button id="id1" class="btn">1</button>
-				<button id="id0" class="btn">0</button>
-				<!-- operators -->
-				<button id="add" class="btn">+</button>
-				<button id="sub" class="btn">-</button>
-				<button id="multi" class="btn">x</button>
-				<button id="div" class="btn">/</button>
-				<!-- specs -->
-				<button id="mod" class="btn">mod</button>
-				<button id="rac" class="btn">rac</button>
-				<button id="pi" class="btn">pi</button>
-				<button id="carre" class="btn">x<sup>2</sup></button>
-				<button id="begin" class="btn">(</button>
-				<button id="end" class="btn">)</button>
-				<button id="dot" class="btn">,</button>
-				<button id="percent" class="btn">%</button>
-				<button id="equal" class="btn">=</button>
-				<button id="clear" class="btn">C</button>
+		<section id="app" class="container box--red--">
+				<div id="calc">
+					<h1>calc-JS</h1>
+					<div id="output-box" class="box--purple--">
+						<div class="row container">
+							<h5>- output -</h5>
+							<h3 id="output" class="col-12">output</h3>
+						</div>
+					</div>
+					<div id="expression-box" class="box--purple--">
+						<div class="row container">
+							<h5>- expression -</h5>
+							<h3 id="expression" class="col-12">expression</h3>
+						</div>
+					</div>
+					<div id="input" class="box--green--">
+						<!-- numbers -->
+						<button id="id9" class="btn">9</button>
+						<button id="id8" class="btn">8</button>
+						<button id="id7" class="btn">7</button>
+						<button id="id6" class="btn">6</button>
+						<button id="id5" class="btn">5</button>
+						<button id="id4" class="btn">4</button>
+						<button id="id3" class="btn">3</button>
+						<button id="id2" class="btn">2</button>
+						<button id="id1" class="btn">1</button>
+						<button id="id0" class="btn">0</button>
+						<!-- operators -->
+						<button id="add" class="btn">+</button>
+						<button id="sub" class="btn">-</button>
+						<button id="multi" class="btn">x</button>
+						<button id="div" class="btn">/</button>
+						<!-- specs -->
+						<button id="mod" class="btn">mod</button>
+						<button id="rac" class="btn">rac</button>
+						<button id="pi" class="btn">pi</button>
+						<button id="carre" class="btn">x<sup>2</sup></button>
+						<button id="begin" class="btn">(</button>
+						<button id="end" class="btn">)</button>
+						<button id="dot" class="btn">,</button>
+						<button id="percent" class="btn">%</button>
+						<button id="equal" class="btn">=</button>
+						<button id="clear" class="btn">C</button>
+					</div>
 			</div>
 		</section>
+
 		<!-- scripts -->
 		<script src="./script/basic.js"></script>
 	</body>

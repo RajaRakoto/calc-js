@@ -19,6 +19,13 @@
 	font-family: $ff-medium;
 }
 
+h1 {
+	text-align: center;
+	font-size: toRem(35px);
+	color: $color-js;
+	text-shadow: 3px 3px #333;
+}
+
 #input .btn {
 	font-family: $ff-regular;
 	font-weight: bolder;

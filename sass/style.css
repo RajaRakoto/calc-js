@@ -2,6 +2,19 @@ body {
   background-color: #888;
 }
 
+#app {
+  width: 30%;
+  min-width: 430px;
+  margin-top: 100px;
+}
+
+#calc {
+  background-color: #666;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px #444;
+}
+
 @font-face {
   font-family: Quicksand-regular;
   src: url("./font/Quicksand-Regular.ttf");
@@ -16,6 +29,13 @@ body {
 }
 * {
   font-family: Quicksand-medium;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.1875rem;
+  color: #f3e13e;
+  text-shadow: 3px 3px #333;
 }
 
 #input .btn {
@@ -47,7 +67,7 @@ body {
 
 #input {
   display: grid;
-  width: 50%;
+  width: 100%;
   margin: auto;
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(5, 60px);
@@ -174,6 +194,33 @@ body {
 
 #id9 {
   grid-area: id9;
+}
+
+#expression-box {
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 22px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  border: solid 2px #eee;
+  border-radius: 10px;
+  color: #444;
+  background-color: #eee;
+}
+
+#output-box {
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  border: solid 2px #eee;
+  border-radius: 10px;
+  color: #444;
+  background-color: #eee;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */
