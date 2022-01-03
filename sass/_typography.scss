@@ -1,4 +1,5 @@
 @import './import/variables';
+@import './import/fonction';
 
 //local
 @font-face {
@@ -16,4 +17,10 @@
 
 * {
 	font-family: $ff-medium;
+}
+
+#input .btn {
+	font-family: $ff-regular;
+	font-weight: bolder;
+	font-size: toRem(15px);
 }

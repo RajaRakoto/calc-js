@@ -18,6 +18,12 @@ body {
   font-family: Quicksand-medium;
 }
 
+#input .btn {
+  font-family: Quicksand-regular;
+  font-weight: bolder;
+  font-size: 0.9375rem;
+}
+
 .box--red {
   border: solid 1px orangered;
 }
@@ -34,16 +40,46 @@ body {
   border: solid 1px #c731c7;
 }
 
+.btn {
+  margin: 2px;
+  border-radius: 10px;
+}
+
 #input {
   display: grid;
-  width: 70%;
+  width: 50%;
   margin: auto;
   grid-template-columns: repeat(5, 20%);
-  grid-template-rows: repeat(5, 50px);
+  grid-template-rows: repeat(5, 60px);
   grid-template-areas: "clear begin end mod pi" "id7 id8 id9 div rac" "id4 id5 id6 multi carre" "id1 id2 id3 sub equal" "id0 dot percent add equal";
 }
 
+#percent,
+#end,
+#begin,
+#dot {
+  background-color: rgba(195, 195, 195, 0.849);
+}
+
+#add,
+#multi,
+#div,
+#sub {
+  background-color: rgba(245, 255, 104, 0.849);
+  color: #333;
+}
+
+#carre,
+#pi,
+#mod,
+#rac {
+  background-color: rgba(218, 123, 197, 0.849);
+  color: #333;
+}
+
 #clear {
+  background-color: #eb6a3b;
+  color: #eee;
   grid-area: clear;
 }
 
@@ -84,6 +120,7 @@ body {
 }
 
 #equal {
+  background-color: #84d684;
   grid-area: equal;
 }
 
