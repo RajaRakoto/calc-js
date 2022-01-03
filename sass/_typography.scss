@@ -1,0 +1,19 @@
+@import './import/variables';
+
+//local
+@font-face {
+	font-family: Quicksand-regular;
+	src: url('./font/Quicksand-Regular.ttf');
+}
+@font-face {
+	font-family: Quicksand-medium;
+	src: url('./font/Quicksand-Medium.ttf');
+}
+@font-face {
+	font-family: Quicksand-bold;
+	src: url('./font/Quicksand-Bold.ttf');
+}
+
+* {
+	font-family: $ff-medium;
+}

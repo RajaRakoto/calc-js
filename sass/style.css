@@ -1,3 +1,142 @@
+body {
+  background-color: #888;
+}
 
+@font-face {
+  font-family: Quicksand-regular;
+  src: url("./font/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: Quicksand-medium;
+  src: url("./font/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: Quicksand-bold;
+  src: url("./font/Quicksand-Bold.ttf");
+}
+* {
+  font-family: Quicksand-medium;
+}
+
+.box--red {
+  border: solid 1px orangered;
+}
+
+.box--yellow {
+  border: solid 1px yellow;
+}
+
+.box--green {
+  border: solid 1px lightgreen;
+}
+
+.box--purple {
+  border: solid 1px #c731c7;
+}
+
+#input {
+  display: grid;
+  width: 70%;
+  margin: auto;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 50px);
+  grid-template-areas: "clear begin end mod pi" "id7 id8 id9 div rac" "id4 id5 id6 multi carre" "id1 id2 id3 sub equal" "id0 dot percent add equal";
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#begin {
+  grid-area: begin;
+}
+
+#end {
+  grid-area: end;
+}
+
+#mod {
+  grid-area: mod;
+}
+
+#pi {
+  grid-area: pi;
+}
+
+#div {
+  grid-area: div;
+}
+
+#rac {
+  grid-area: rac;
+}
+
+#multi {
+  grid-area: multi;
+}
+
+#carre {
+  grid-area: carre;
+}
+
+#sub {
+  grid-area: sub;
+}
+
+#equal {
+  grid-area: equal;
+}
+
+#dot {
+  grid-area: dot;
+}
+
+#percent {
+  grid-area: percent;
+}
+
+#add {
+  grid-area: add;
+}
+
+#id0 {
+  grid-area: id0;
+}
+
+#id1 {
+  grid-area: id1;
+}
+
+#id2 {
+  grid-area: id2;
+}
+
+#id3 {
+  grid-area: id3;
+}
+
+#id4 {
+  grid-area: id4;
+}
+
+#id5 {
+  grid-area: id5;
+}
+
+#id6 {
+  grid-area: id6;
+}
+
+#id7 {
+  grid-area: id7;
+}
+
+#id8 {
+  grid-area: id8;
+}
+
+#id9 {
+  grid-area: id9;
+}
 
 /*# sourceMappingURL=style.css.map */
