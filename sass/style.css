@@ -1,3 +1,37 @@
+body {
+  background-color: #888;
+}
 
+@font-face {
+  font-family: Quicksand-regular;
+  src: url("./font/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: Quicksand-medium;
+  src: url("./font/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: Quicksand-bold;
+  src: url("./font/Quicksand-Bold.ttf");
+}
+* {
+  font-family: Quicksand-regular;
+}
+
+.box--red {
+  border: solid 1px orangered;
+}
+
+.box--yellow {
+  border: solid 1px yellow;
+}
+
+.box--green {
+  border: solid 1px lightgreen;
+}
+
+.box--purple {
+  border: solid 1px #c731c7;
+}
 
 /*# sourceMappingURL=style.css.map */
