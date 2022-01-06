@@ -26,8 +26,27 @@ h1 {
 	text-shadow: 3px 3px #333;
 }
 
-#input .btn {
-	font-family: $ff-regular;
-	font-weight: bolder;
-	font-size: toRem(15px);
+#input {
+	.btn {
+		font-family: $ff-regular;
+		font-weight: bolder;
+		font-size: toRem(15px);
+	}
+	.btn-operators {
+		font-size: toRem(25px);
+	}
+	.btn-others {
+		font-size: toRem(18px);
+	}
+	#virg {
+		font-size: toRem(22px);
+	}
+	#equal,
+	#clear {
+		font-size: toRem(25px);
+	}
+	.btn-specs {
+		font-weight: bolder;
+		font-size: toRem(18px);
+	}
 }
