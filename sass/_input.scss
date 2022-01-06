@@ -1,6 +1,23 @@
 @import './import/variables';
 
+@mixin inputStyle ($standard-color, $hover-color) {
+	background-color: $standard-color;
+	&:hover {
+		background-color: $hover-color;
+	}
+}
+
 .btn {
+	background-color: $color-btn;
+	&:hover {
+		background-color: pastel($color-btn);
+	}
+}
+
+.btn,
+.btn-specs,
+.btn-operators,
+.btn-others {
 	margin: 2px;
 	border-radius: 10px;
 }
@@ -20,36 +37,40 @@
 		'id7 id8 id9 div rac'
 		'id4 id5 id6 multi carre'
 		'id1 id2 id3 sub equal'
-		'id0 dot percent add equal';
+		'id0 virg dot add equal';
 }
 
-#percent,
+#virg,
 #end,
 #begin,
 #dot {
-	background-color: rgba(195, 195, 195, 0.849);
+	@include inputStyle($color-btn-others, pastel($color-btn-others))
 }
 
 #add,
 #multi,
 #div,
 #sub {
-	background-color: rgba(245, 255, 104, 0.849);
-	color: #333;
+	@include inputStyle($color-btn-operators, pastel($color-btn-operators))
 }
 
 #carre,
 #pi,
 #mod,
 #rac {
-	background-color: rgba(218, 123, 197, 0.849);
-	color: #333;
+	color: #eee;
+	@include inputStyle($color-btn-specs, pastel($color-btn-specs))
 }
 
 #clear {
-	background-color: rgb(235, 106, 59);
 	color: #eee;
 	grid-area: clear;
+	@include inputStyle(rgb(212, 94, 51), rgb(235, 106, 59))
+}
+
+#equal {
+	grid-area: equal;
+	@include inputStyle($color-btn-equal, pastel($color-btn-equal))
 }
 
 #begin {
@@ -88,17 +109,8 @@
 	grid-area: sub;
 }
 
-#equal {
-	background-color: rgb(132, 214, 132);
-	grid-area: equal;
-}
-
 #dot {
 	grid-area: dot;
-}
-
-#percent {
-	grid-area: percent;
 }
 
 #add {
