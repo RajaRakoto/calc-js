@@ -1,4 +1,6 @@
-const allInput = document.querySelectorAll('.btn'); //recuperer tout les 'buttons input'
+const allBtnInput = document.querySelectorAll('.btn'); //recuperer tout les 'buttons "btn" class input'
+const allBtnOthersInput = document.querySelectorAll('.btn-others'); //recuperer tout les 'buttons "btn-others" class input'
+const allBtnOperatorsInput = document.querySelectorAll('.btn-operators'); //recuperer tout les 'buttons "btn-operators" class input'
 const equal = document.getElementById('equal'); //recuperer 'equal button (egale)'
 const clear = document.getElementById('clear'); //recuperer 'clear button (effacer)'
 const expression = document.getElementById('expression');
@@ -22,17 +24,31 @@ function expressionOverflowTest() {
 	}
 }
 
-allInput.forEach(input => {
-	input.addEventListener('click', e => {
-		input = e.target.innerText; //recuperer la valeur de chaque 'button' clickE
-		result += input; //concatener chaque valeur pour les stockEs dans la variable result
-		expression.innerText = result; //afficher l'expression
-		counter.innerText = counterValue++; //dynamiser le compteur d'expression
-		expressionOverflowTest();
-
-		//specs counter (mod + pi + rac + x2)
+function inputEvent(inputName) {
+	inputName.forEach(input => {
+		input.addEventListener('click', e => {
+			input = e.target.innerText; //recuperer la valeur de chaque 'button' clickE
+			result += input; //concatener chaque valeur pour les stockEs dans la variable result
+			expression.innerText = result; //afficher l'expression
+			counter.innerText = counterValue++; //dynamiser le compteur d'expression
+			expressionOverflowTest();
+		});
 	});
-});
+}
+
+inputEvent(allBtnInput); //ecouteur d'evenement pour les bouttons classique (0 ... 9)
+inputEvent(allBtnOthersInput); //ecouteur d'evenement pour les autres bouttons
+inputEvent(allBtnOperatorsInput); //ecouteur d'evenement pour les bouttons d'operateurs (+, -, *, et /)
+
+// allBtnInput.forEach(input => {
+// 	input.addEventListener('click', e => {
+// 		input = e.target.innerText; //recuperer la valeur de chaque 'button' clickE
+// 		result += input; //concatener chaque valeur pour les stockEs dans la variable result
+// 		expression.innerText = result; //afficher l'expression
+// 		counter.innerText = counterValue++; //dynamiser le compteur d'expression
+// 		expressionOverflowTest();
+// 	});
+// });
 
 clear.addEventListener('click', () => {
 	expression.innerHTML = '&nbsp;'; //reinitialiser l'affichage
