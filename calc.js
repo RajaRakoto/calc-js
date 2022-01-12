@@ -8,7 +8,7 @@ const output = document.getElementById('output');
 const counter = document.getElementById('counter');
 const synopsis = document.getElementById('synopsis');
 let counterValue = 1;
-let result = '';
+let result = ''; 
 
 function clearAll() {
 	//nettoyer les elements inutiles
