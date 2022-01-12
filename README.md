@@ -1,8 +1,6 @@
 💛💛💛💛💛💛💛💛💛💛💛💛💛💛 **calc-js** 💛💛💛💛💛💛💛💛💛💛💛💛💛💛
 
-<div align="center">
-<img src="./calc-js.png" width="300" height="400">
-</div>
+<img src="./calc-js.png" width="400" height="500">
 
 Listes des fonctionnalitEs de la calculatrice (implementE & a faire)
 - [x] Operation basique (addition, soustraction, multiplication, division)
