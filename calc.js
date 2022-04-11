@@ -10,6 +10,7 @@ const synopsis = document.getElementById('synopsis');
 let counterValue = 1;
 let result = ''; 
 
+
 function clearAll() {
 	//nettoyer les elements inutiles
 	synopsis.style.display = 'none';
