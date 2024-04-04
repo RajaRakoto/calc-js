@@ -1,234 +1,265 @@
 body {
-	background-color: #888;
+  background-color: #888;
 }
+
 #app {
-	width: 30%;
-	min-width: 430px;
-	margin-top: 100px;
+  width: 30%;
+  min-width: 430px;
+  margin-top: 100px;
 }
+
 #calc {
-	background-color: #777;
-	padding: 30px;
-	border-radius: 10px;
-	box-shadow: 5px 5px #444;
+  background-color: #777;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px #444;
 }
+
 @font-face {
-	font-family: Quicksand-regular;
-	src: url("../assets/fonts/Quicksand-Regular.ttf");
-}
-@font-face {
-	font-family: Quicksand-medium;
-	src: url("../assets/fonts/Quicksand-Medium.ttf");
-}
-@font-face {
-	font-family: Quicksand-bold;
-	src: url("../assets/fonts/Quicksand-Bold.ttf");
+  font-family: Quicksand;
+  src: url("../assets/fonts/Quicksand.ttf");
 }
 * {
-	font-family: Quicksand-medium;
+  font-family: Quicksand;
 }
+
 h1 {
-	text-align: center;
-	font-size: 2.1875rem;
-	color: #f3e13e;
-	text-shadow: 3px 3px #333;
+  text-align: center;
+  font-size: 2.1875rem;
+  color: rgb(243, 225, 62);
+  text-shadow: 3px 3px #333;
 }
+
 #input .btn {
-	font-family: Quicksand-regular;
-	font-weight: bolder;
-	font-size: 0.9375rem;
+  font-family: Qicksand;
+  font-size: 0.9375rem;
 }
 #input .btn-operators {
-	font-size: 1.5625rem;
+  font-size: 1.5625rem;
 }
 #input .btn-others {
-	font-size: 1.125rem;
+  font-size: 1.125rem;
+}
+#input .btn-specs {
+  font-weight: bolder;
+  font-size: 1.125rem;
 }
 #input #virg {
-	font-size: 1.375rem;
+  font-size: 1.375rem;
 }
 #input #equal,
 #input #clear {
-	font-size: 1.5625rem;
+  font-size: 1.5625rem;
 }
-#input .btn-specs {
-	font-weight: bolder;
-	font-size: 1.125rem;
-}
+
 .box--red {
-	border: solid 1px #ff4500;
+  border: solid 1px orangered;
 }
 .box--yellow {
-	border: solid 1px #ff0;
+  border: solid 1px yellow;
 }
 .box--green {
-	border: solid 1px #90ee90;
+  border: solid 1px lightgreen;
 }
 .box--purple {
-	border: solid 1px #c731c7;
+  border: solid 1px rgb(199, 49, 199);
 }
+
 .btn {
-	background-color: #ececec;
+  background-color: rgb(236, 236, 236);
 }
 .btn:hover {
-	background-color: #f99;
+  background-color: hsl(0, 100%, 80%);
 }
+
 .btn,
 .btn-specs,
 .btn-operators,
 .btn-others {
-	margin: 2px;
-	border-radius: 10px;
+  margin: 2px;
+  border-radius: 10px;
 }
+
 #input {
-	display: grid;
-	width: 100%;
-	margin: auto;
-	grid-template-columns: repeat(5, 20%);
-	grid-template-rows: repeat(5, 60px);
-	grid-template-areas: "clear begin end mod pi" "id7 id8 id9 div rac" "id4 id5 id6 multi carre" "id1 id2 id3 sub equal" "id0 virg dot add equal";
+  display: grid;
+  width: 100%;
+  margin: auto;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 60px);
+  grid-template-areas: "clear begin end mod pi" "id7 id8 id9 div rac" "id4 id5 id6 multi carre" "id1 id2 id3 sub equal" "id0 virg dot add equal";
 }
+
 #virg,
 #end,
 #begin,
 #dot {
-	background-color: rgba(195, 195, 195, 0.849);
+  background-color: rgba(195, 195, 195, 0.849);
 }
 #virg:hover,
 #end:hover,
 #begin:hover,
 #dot:hover {
-	background-color: #f99;
+  background-color: hsl(0, 100%, 80%);
 }
+
 #add,
 #multi,
 #div,
 #sub {
-	background-color: rgba(245, 255, 104, 0.849);
+  background-color: rgba(245, 255, 104, 0.849);
 }
 #add:hover,
 #multi:hover,
 #div:hover,
 #sub:hover {
-	background-color: #f8ff99;
+  background-color: hsl(63.9735099338, 100%, 80%);
 }
+
 #carre,
 #pi,
 #mod,
 #rac {
-	color: #eee;
-	background-color: rgba(218, 123, 197, 0.849);
+  color: #eee;
+  background-color: rgba(218, 123, 197, 0.849);
 }
 #carre:hover,
 #pi:hover,
 #mod:hover,
 #rac:hover {
-	background-color: #ff99e8;
+  background-color: hsl(313.2631578947, 100%, 80%);
 }
+
 #clear {
-	color: #eee;
-	grid-area: clear;
-	background-color: #d45e33;
+  color: #eee;
+  grid-area: clear;
+  background-color: rgb(212, 94, 51);
 }
 #clear:hover {
-	background-color: #eb6a3b;
+  background-color: rgb(235, 106, 59);
 }
+
 #equal {
-	grid-area: equal;
-	background-color: #84d684;
+  grid-area: equal;
+  background-color: rgb(132, 214, 132);
 }
 #equal:hover {
-	background-color: #9f9;
+  background-color: hsl(120, 100%, 80%);
 }
+
 #begin {
-	grid-area: begin;
+  grid-area: begin;
 }
+
 #end {
-	grid-area: end;
+  grid-area: end;
 }
+
 #mod {
-	grid-area: mod;
+  grid-area: mod;
 }
+
 #pi {
-	grid-area: pi;
+  grid-area: pi;
 }
+
 #div {
-	grid-area: div;
+  grid-area: div;
 }
+
 #rac {
-	grid-area: rac;
+  grid-area: rac;
 }
+
 #multi {
-	grid-area: multi;
+  grid-area: multi;
 }
+
 #carre {
-	grid-area: carre;
+  grid-area: carre;
 }
+
 #sub {
-	grid-area: sub;
+  grid-area: sub;
 }
+
 #dot {
-	grid-area: dot;
+  grid-area: dot;
 }
+
 #add {
-	grid-area: add;
+  grid-area: add;
 }
+
 #id0 {
-	grid-area: id0;
+  grid-area: id0;
 }
+
 #id1 {
-	grid-area: id1;
+  grid-area: id1;
 }
+
 #id2 {
-	grid-area: id2;
+  grid-area: id2;
 }
+
 #id3 {
-	grid-area: id3;
+  grid-area: id3;
 }
+
 #id4 {
-	grid-area: id4;
+  grid-area: id4;
 }
+
 #id5 {
-	grid-area: id5;
+  grid-area: id5;
 }
+
 #id6 {
-	grid-area: id6;
+  grid-area: id6;
 }
+
 #id7 {
-	grid-area: id7;
+  grid-area: id7;
 }
+
 #id8 {
-	grid-area: id8;
+  grid-area: id8;
 }
+
 #id9 {
-	grid-area: id9;
+  grid-area: id9;
 }
+
 #expression-box {
-	margin: auto;
-	margin-top: 5px;
-	margin-bottom: 22px;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	width: 100%;
-	border: solid 2px #eee;
-	border-radius: 10px;
-	color: #444;
-	background-color: #eee;
-	overflow: auto;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 22px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  border: solid 2px #eee;
+  border-radius: 10px;
+  color: #444;
+  background-color: #eee;
+  overflow: auto;
 }
+
 #synopsis {
-	font-size: small;
-	display: none;
+  font-size: small;
+  display: none;
 }
+
 #output-box {
-	margin: auto;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	width: 100%;
-	border: solid 2px #eee;
-	border-radius: 10px;
-	background-color: #bebebe;
-	color: #41ff28;
-} /*# sourceMappingURL=style.css.map */
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  border: solid 2px #eee;
+  border-radius: 10px;
+  background-color: rgb(190, 190, 190);
+  color: rgb(65, 255, 40);
+}
+
+/*# sourceMappingURL=style.css.map */
