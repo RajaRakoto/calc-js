@@ -1,0 +1,39 @@
+{
+	"name": "calc-js",
+	"version": "1.0.0",
+	"description": "A multifunction calculator in Javascript 💛",
+	"author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RajaRakoto/calc-js.git"
+	},
+	"homepage": "https://github.com/RajaRakoto/calc-js#readme",
+	"bugs": "https://github.com/RajaRakoto/calc-js/issues",
+	"keywords": [
+		"javascript",
+		"dom",
+		"vanilla-js",
+		"calculator",
+    "calc"
+	],
+	"scripts": {
+    "sass:watch": "sass --watch sass/main.scss:sass/style.css",
+		"prettier": "prettier --config .prettierrc --write .",
+		"backup": "grunt backup",
+		"pkg-check": "depcheck",
+		"pkg-upgrade": "ncu --interactive --format group --packageManager bun",
+		"versioning": "ungit",
+		"npm-version:major": "npm version major",
+		"npm-version:minor": "npm version minor",
+		"npm-version:patch": "npm version patch"
+	},
+	"devDependencies": {
+		"depcheck": "^1.4.7",
+		"grunt": "^1.6.1",
+		"grunt-contrib-compress": "^2.0.0",
+		"load-grunt-tasks": "^5.1.0",
+		"npm-check-updates": "^16.14.18",
+		"prettier": "^3.2.5"
+	}
+}
