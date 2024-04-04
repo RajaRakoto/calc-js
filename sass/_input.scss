@@ -1,6 +1,6 @@
-@import './variables';
+@import "./variables";
 
-@mixin inputStyle ($standard-color, $hover-color) {
+@mixin inputStyle($standard-color, $hover-color) {
 	background-color: $standard-color;
 	&:hover {
 		background-color: $hover-color;
@@ -33,25 +33,25 @@
 	grid-template-rows: repeat(5, 60px); // 5 lignes dont 50px chacun
 	grid-template-areas: // definition de la zone des elements
 
-		'clear begin end mod pi'
-		'id7 id8 id9 div rac'
-		'id4 id5 id6 multi carre'
-		'id1 id2 id3 sub equal'
-		'id0 virg dot add equal';
+		"clear begin end mod pi"
+		"id7 id8 id9 div rac"
+		"id4 id5 id6 multi carre"
+		"id1 id2 id3 sub equal"
+		"id0 virg dot add equal";
 }
 
 #virg,
 #end,
 #begin,
 #dot {
-	@include inputStyle($color-btn-others, pastel($color-btn-others))
+	@include inputStyle($color-btn-others, pastel($color-btn-others));
 }
 
 #add,
 #multi,
 #div,
 #sub {
-	@include inputStyle($color-btn-operators, pastel($color-btn-operators))
+	@include inputStyle($color-btn-operators, pastel($color-btn-operators));
 }
 
 #carre,
@@ -59,18 +59,18 @@
 #mod,
 #rac {
 	color: #eee;
-	@include inputStyle($color-btn-specs, pastel($color-btn-specs))
+	@include inputStyle($color-btn-specs, pastel($color-btn-specs));
 }
 
 #clear {
 	color: #eee;
 	grid-area: clear;
-	@include inputStyle(rgb(212, 94, 51), rgb(235, 106, 59))
+	@include inputStyle(rgb(212, 94, 51), rgb(235, 106, 59));
 }
 
 #equal {
 	grid-area: equal;
-	@include inputStyle($color-btn-equal, pastel($color-btn-equal))
+	@include inputStyle($color-btn-equal, pastel($color-btn-equal));
 }
 
 #begin {

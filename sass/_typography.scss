@@ -1,48 +1,48 @@
-@import './variables';
-@import './fonction';
+@import "./variables";
+@import "./fonction";
 
 // local
 @font-face {
-  font-family: Quicksand;
-  src: url('../assets/fonts/Quicksand.ttf');
+	font-family: Quicksand;
+	src: url("../assets/fonts/Quicksand.ttf");
 }
 
 * {
-  font-family: Quicksand;
+	font-family: Quicksand;
 }
 
 h1 {
-  text-align: center;
-  font-size: toRem(35px);
-  color: $color-js;
-  text-shadow: 3px 3px #333;
+	text-align: center;
+	font-size: toRem(35px);
+	color: $color-js;
+	text-shadow: 3px 3px #333;
 }
 
 #input {
-  .btn {
-    font-family: $ff-regular;
-    font-size: toRem(15px);
+	.btn {
+		font-family: $ff-regular;
+		font-size: toRem(15px);
 
-    &-operators {
-      font-size: toRem(25px);
-    }
+		&-operators {
+			font-size: toRem(25px);
+		}
 
-    &-others {
-      font-size: toRem(18px);
-    }
+		&-others {
+			font-size: toRem(18px);
+		}
 
-    &-specs {
-      font-weight: bolder;
-      font-size: toRem(18px);
-    }
-  }
+		&-specs {
+			font-weight: bolder;
+			font-size: toRem(18px);
+		}
+	}
 
-  #virg {
-    font-size: toRem(22px);
-  }
+	#virg {
+		font-size: toRem(22px);
+	}
 
-  #equal,
-  #clear {
-    font-size: toRem(25px);
-  }
+	#equal,
+	#clear {
+		font-size: toRem(25px);
+	}
 }

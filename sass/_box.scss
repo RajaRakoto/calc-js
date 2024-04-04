@@ -1,17 +1,17 @@
 .box {
-  &--red {
-    border: solid 1px orangered;
-  }
-  
-  &--yellow {
-    border: solid 1px yellow;
-  }
-  
-  &--green {
-    border: solid 1px lightgreen;
-  }
-  
-  &--purple {
-    border: solid 1px rgb(199, 49, 199);
-  }
+	&--red {
+		border: solid 1px orangered;
+	}
+
+	&--yellow {
+		border: solid 1px yellow;
+	}
+
+	&--green {
+		border: solid 1px lightgreen;
+	}
+
+	&--purple {
+		border: solid 1px rgb(199, 49, 199);
+	}
 }

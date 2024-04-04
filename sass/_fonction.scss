@@ -1,10 +1,11 @@
-@use 'sass:math';
+@use "sass:math";
 
 @function toRem($value) {
 	@return math.div($value, 16px) * 1rem;
 }
 
-@function pastel($clr) { // return a pastel for color in arg
+@function pastel($clr) {
+	// return a pastel for color in arg
 	$hue: hue($clr);
 	$sat: 100%;
 	$light: 80%;

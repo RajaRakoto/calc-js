@@ -15,10 +15,10 @@
 		"dom",
 		"vanilla-js",
 		"calculator",
-    "calc"
+		"calc"
 	],
 	"scripts": {
-    "sass:watch": "sass --watch sass/main.scss:sass/style.css",
+		"sass:watch": "sass --watch sass/main.scss:sass/style.css",
 		"prettier": "prettier --config .prettierrc --write .",
 		"backup": "grunt backup",
 		"pkg-check": "depcheck",
