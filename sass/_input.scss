@@ -1,4 +1,4 @@
-@import './import/variables';
+@import './variables';
 
 @mixin inputStyle ($standard-color, $hover-color) {
 	background-color: $standard-color;
@@ -24,14 +24,14 @@
 
 #input {
 	display: grid;
-	width: 100%; //taille global
-	margin: auto; //centrer
+	width: 100%; // taille global
+	margin: auto; // centrer
 	grid-template-columns: repeat(
 		5,
 		20%
-	); //5 colonnes dont 20% chacun (20% * 5 = 100%)
-	grid-template-rows: repeat(5, 60px); //5 lignes dont 50px chacun
-	grid-template-areas: //definition de la zone des elements
+	); // 5 colonnes dont 20% chacun (20% * 5 = 100%)
+	grid-template-rows: repeat(5, 60px); // 5 lignes dont 50px chacun
+	grid-template-areas: // definition de la zone des elements
 
 		'clear begin end mod pi'
 		'id7 id8 id9 div rac'
