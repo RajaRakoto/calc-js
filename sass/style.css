@@ -17,10 +17,10 @@ body {
 
 @font-face {
   font-family: Quicksand;
-  src: url("../assets/fonts/Quicksand.ttf");
+  src: url("../assets/fonts/quicksand.ttf");
 }
 * {
-  font-family: Quicksand;
+  font-family: Quicksand !important;
 }
 
 h1 {
